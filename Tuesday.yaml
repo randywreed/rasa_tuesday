@@ -1,0 +1,293 @@
+intents:
+- intent: coursefulfill
+  examples: |
+  - What will this course count towards
+  - Will this class fulfill any gen ed requirements
+  - Does this class help with my general education
+  - does this course add to my curriculum
+  - what part of my curriculum will this class contribute to
+  - will this class count for my major
+  - will this class count for my minor
+  - will i get hours towards my religion major with this class
+  
+- intent: wherefindlec
+  examples: |
+  - Where can I find the lectures
+  - where are the lecture recordings
+  - where are the recorded lectures posted
+  - lecture recordings
+  - how do i view the lectures
+  - where do i go to see the recorded lectures
+  - are the lectures posted
+  - where are the videos
+  - how do I watch the video recordings
+  - powerpoint lectures
+  - 'where can i go to find the PowerPoint videos '
+  
+- intent: greeting
+  examples: |
+  - Hi
+  - Hey
+  - Hello
+  - Hiya
+  - Hi Tuesday
+  - Hello Tuesday
+  
+- intent: NOG
+  examples: |
+  - what is the name of god
+  - who is god
+  - whats god
+  
+- intent: courserec
+  examples: |
+  - what are the requirements for this class
+  - what are the course requirements
+  - Course recs
+  - class requirments
+  - what assignments are required
+  - what's required in this class
+  - what assignments will there be
+  - type of class assignments
+  - what kind of coursework
+  
+- intent: ImportanceLEC
+  examples: |
+  - do i have to watch the lectures
+  - do i have to watch the PowerPoints
+  - how important is it to watch the lectures
+  - am i required to watch the lectures
+  - do i need to see the powerpoints to pass
+  - do i really have watch all the lectures
+  - can i pass without watching lectures
+  
+- intent: SECone
+  examples: |
+  - I'm bored
+  
+- intent: officehours
+  examples: |
+  - When are my teacher's office hours
+  - When does my professor have office hours
+  - When can i talk face to face with my professor
+  - What are the office hours for this class
+  
+- intent: SECthree
+  examples: |
+  - Are you a robot
+  - are you a bot
+  
+- intent: ImportanceRDNG
+  examples: |
+  - Is the reading actually important
+  - do i really have to do the reading assignments
+  - will i fail if i don't do the readings
+  - can I still pass if i do not do all of the assigned articles
+  - how important is it to read the  articles
+  - do i have to do the readings
+  
+- intent: JKS
+  examples: |
+  - tell me a joke
+  - do you know any jokes
+  - i want to hear something funny
+  - whats your best joke
+  - Tell me something that will make me laugh
+  - good joke
+  
+- intent: aboutcourse
+  examples: |
+  - What is this class about
+  - Give me a general description of this class
+  - What will this course teach me
+  - What type of things does this course cover
+  - What information do we go over in this class
+  - What info will we cover in this course
+  - What is this class supposed to teach me
+  - Give me a summary of what the class is about
+  - class summary
+  - general class description
+  - 'brief course summary '
+  - tell me about the class
+  - tell me about the course
+  - give me some info on the class
+  - give me a class summary
+  - summarize the class
+  - about course
+  - about class
+  
+- intent: ImportanceATND
+  examples: |
+  - How important is attendance
+  - will my grade be effected if in not in class
+  - if i miss zoom will points be taken off my grade
+  - how much of my grade is attendance worth
+  - if i watch recordings but don't attend the lectures is that okay
+  - is attendance required
+  - attendance requirements
+  - how many zoom sessions can i miss
+  - how many absences am i allowed to have
+  
+- intent: Whatname
+  examples: |
+  - What is your name
+  - Who are you
+  - What are you called
+  - What should I call you
+  
+- intent: Midterm
+  examples: |
+  - information about the mid-term
+  - what's on the mid-term
+  - what will be on the midterm
+  - give me info on the midterm
+  - do we have a mid-term
+  - is there a mid-term in this class
+  - is the mid-term required
+  - tell me about the midterm in this class
+  - does this course have a midterm
+  - Do i have a midterm
+  - is the midterm cumulative
+  - midterm
+  - info on midterm
+  - what's on the midterm for this course
+  - how much is the midterm worth
+  - what percent of my grade does the mid-term account for
+  - how does the midterm affect my final grade
+  - what percent of my final grade is dependent on what i score on the mid-term
+  - can I pass the class if i fail the midterm
+  - can i still get an A in the course if I don't do well on the mid-term
+  - how important is the mid-term
+  - 'is the midterm super important '
+  
+- intent: SECtwo
+  examples: |
+  - What's up
+  
+- intent: whytitile
+  examples: |
+  - What gives the class its name
+  - why is the class called religion and imaginary worlds
+  - what does imaginary worlds refer to
+  - Why does rel and imaginary worlds mean
+  
+- intent: FinalExam
+  examples: |
+  - Is the final exam super important
+  - how important is the final
+  - can i still get an A in the class if i don't do well on the final
+  - can I still pass if i fail the final exam
+  - what percent of my final grade is dependant on the final
+  - how much of my final grade does the final exam account for
+  - what percent of my grade is from the final
+  - how much does the final exam affect my final grade
+  - how much is the Final worth
+  - Is the Final Exam cumulative
+  - Whats on the Final
+  - how does the final exam effect my overall grade
+  - Do we have a final exam
+  - Is there a final exam in this class
+  - does this course have a Final
+  - is the final exam required
+  - if my grade is high enough do I still need to take the final
+  - if i have a really good grade in the class is the final exam required
+  - tell me about the final exam in this class
+  - information on Final
+  - give me info on the Final exam
+  
+- intent: teacheremail
+  examples: |
+  - What is Dr. Reed's email
+  - How can i contact dr Reed
+  - What's my professor's email
+  - What's my teachers email
+  - How can i reach my teacher
+  - How can i get in contact with my professor outside of office hours
+  - How do i get a hold of dr reed if its not during office hours
+  - Teacher email
+  - 'email my professor '
+  
+- intent: credhours
+  examples: |
+  - How many credits will I get from this course
+  - How many credit hours does this course give me
+  - Course credits
+  - number of credits for this curse
+  - Credit hours
+  - how many credits in this course
+  - how many credit hours in class
+  - amount of credit hours
+  
+- intent: whatpurpose
+  examples: |
+  - What can you do
+  - What are you able to help me with
+  - What can I ask you
+  - What questions can you answer
+  
+- intent: version
+  examples: |
+  - version
+  - what version are you
+  - what is your version
+  - tell me your version number
+  - what version are you on
+  
+- intent: tests
+  examples: |
+  - do we have any tests in this class
+  - are the tests cumulative
+  - How many exams do we have
+  - Are there any exams for this course
+  - are tests required
+  - How many tests in the course
+  - tell me about the tests in this class
+  - do we have tests in the class
+  - does this course require exams
+  
+- intent: sylink
+  examples: |
+  - Where is the syllabus
+  - how can i find the syllabus
+  - what is on the syllabus
+  - is there a syllabus
+  
+- intent: celldevices
+  examples: |
+  - Can I use my cellphone in class
+  - are electronics allowed in class
+  - Can i use my laptop for taking notes
+  - Do i need to turn off my phone in class
+  - do I need to silence my phone in class
+  - when am i allowed to use my phone in class
+  - when can i use my laptop
+  - Whats the policy on cell phones
+  - What is the classroom policy on laptops
+  - What are the rules on electronic use
+  - electronics policy
+  - can i take notes on my computer
+  - use laptop for notes
+  - cell phone rules
+  
+- intent: checkgroup
+  examples: |
+  - what is my group
+  - what group am i in
+  - what is my topic
+  - what topic do i have
+  - what should i do my analysis on
+  - what group did i sign up for
+  - which group am i apart of
+  - whats my group
+  slots:
+  - intent: email
+    examples: | []
+    type: AMAZON.EmailAddress
+prompts:
+- definitionVersion: '1.0'
+  id: Elicit.Intent-checkgroup.IntentSlot-email
+  promptVersion: '1.0'
+  variations:
+  - type: PlainText
+    value: What is your email?
+types: []

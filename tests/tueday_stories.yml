@@ -1,0 +1,126 @@
+Stories:
+-  story: story 
+   steps:
+   - intent: coursefulfill
+    
+    
+-  story: story
+   steps:
+   - intent: wherefindlec
+    
+    
+-  story: story
+   steps:
+   - intent: greeting
+    
+    
+-  story: story
+   steps:
+   - intent: NOG
+    
+    
+-  story: story
+   steps:
+   - intent: courserec
+    
+    
+-  story: story
+   steps:
+   - intent: ImportanceLEC
+    
+    
+-  story: story
+   steps:
+   - intent: SECone
+    
+    
+-  story: story
+   steps:
+   - intent: officehours
+    
+    
+-  story: story
+   steps:
+   - intent: SECthree
+    
+    
+-  story: story
+   steps:
+   - intent: ImportanceRDNG
+    
+    
+-  story: story
+   steps:
+   - intent: JKS
+    
+    
+-  story: story
+   steps:
+   - intent: aboutcourse
+    
+    
+-  story: story
+   steps:
+   - intent: ImportanceATND
+    
+    
+-  story: story
+   steps:
+   - intent: Whatname
+    
+    
+-  story: story
+   steps:
+   - intent: Midterm
+    
+    
+-  story: story
+   steps:
+   - intent: SECtwo
+    
+    
+-  story: story
+   steps:
+   - intent: whytitile
+    
+    
+-  story: story
+   steps:
+   - intent: FinalExam
+    
+    
+-  story: story
+   steps:
+   - intent: teacheremail
+    
+    
+-  story: story
+   steps:
+   - intent: credhours
+    
+    
+-  story: story
+   steps:
+   - intent: whatpurpose
+    
+    
+-  story: story
+   steps:
+   - intent: version
+    
+    
+-  story: story
+   steps:
+   - intent: tests
+    
+    
+-  story: story
+   steps:
+   - intent: sylink
+    
+    
+-  story: story
+   steps:
+   - intent: celldevices
+    
+    
