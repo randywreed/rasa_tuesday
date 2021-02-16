@@ -68,8 +68,7 @@ utter_greeting:
 - text: Hi there,what can I do for you?
 - text: Greetings to you as well, do you have any questions for me?
 - text: Hiya, what can I help you with?
-- text: Hey there, do you need some
-    help?
+- text: Hey there, do you need some help?
 utter_officehours:
 - text: Dr. Reed will be on Zoom every Monday from 1 to 2 for his office hours. The
     meeting ID is 8284065157. If you have a time sensitive question that I can't help
