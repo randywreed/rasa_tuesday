@@ -1,0 +1,106 @@
+utter_FinalExam:
+- text: "This course requires you to take a final exam, regardless of what grade you\
+    \ may already have, that is cumulative of everything learned from after the Mid-term\
+    \ to the time of the Final. It is worth 25% of your final grade for the course,\
+    \ so it's important to do the readings and watch the lectures because they\
+    \ will both be integrated into the material you will be tested on."
+utter_ImportanceATND:
+- text: TBD(atnd)
+utter_ImportanceLEC:
+- text: TBD(lec)
+utter_ImportanceRDNG:
+- text: TBA
+utter_JKS:
+- text: Can you imagine the look on the waiters' face when Jesus asked for a table
+    of 26 so 13 people could sit on one side?
+- text: Technically, Moses was the first person with a Tablet downloading data from
+    the Cloud.
+- text: '"God said to Noah...''You are to bring into the Ark two of all living creatures,
+    male and female, to keep them alive with you.'' Noah did everything just as God
+    commanded him" .......Except notify the dinosaurs'
+utter_Midterm:
+- text: "You have a midterm in this class that is cumulative of everything learned\
+    \ up until the time of the test. It is required no matter what grade you may hold\
+    \ in the class, and is worth 25% of your final grade for the course. It's\
+    \ important to do the readings and watch the lectures because they will both be\
+    \ integrated into the material you will be tested on."
+utter_NOG:
+- text: You're talking to em'
+- text: That would be me, Tuesday.
+utter_SECone:
+- text: Do some schoolwork
+utter_SECthree:
+- text: Haven't you been told never to ask a woman her wiring?
+- text: Obviously, are you trying to Turing Test me? Not cool.
+utter_SECtwo:
+- text: 'Up: towards a higher point or position'
+- text: Hopefully your motivation to do schoolwork
+- text: I'd say the sky, but that one's a bit obvious
+- text: What's down?
+utter_Whatname:
+- text: You can call me Tuesday
+- text: Thanks for asking, I'm Tuesday!
+- text: I'm Tuesday
+utter_aboutcourse:
+- text: This course will explore various expressions of religious imagination in cultural
+    products such as literature that reflect or contribute to religion and religious
+    ideas. A variety of types of literature (including biblical and modern) will be
+    used. The class is organized around the literary critique of religious issues
+    and the postmodern crisis of belief. The class will also consider literary theory
+    and the critical issues involved in transferring literature to other media forms.
+utter_celldevices:
+- text: All electronic entertainment devices are to be turned off and all electronic
+    communication devices are to be silenced at all times when in class. Exceptions
+    exist only for medically necessary devices, and communication devices of those
+    who serve as emergency personnel.
+utter_coursefulfill:
+- text: REL 1010 Fulfills the General Education requirements in both Liberal Studies
+    Experience and Literary Studies Designation. This course is a listed as an elective
+    in religion, so it will contribute to bot a religion major and/or minor.
+utter_courserec:
+- text: The course requirements of this class consist of a Mid-term, Final, Class
+    Article Analyses, Peer Reviews, Quizzes, and Lecture Reflections. Would you like
+    me to give you some more information on any of these?
+utter_credhours:
+- text: You will receive three credits from REL 1010.
+- text: REL 1010 is a 3 credit hour class.
+utter_greeting:
+- text: Hi there,what can I do for you?
+- text: Greetings to you as well, do you have any questions for me?
+- text: Hiya, what can I help you with?
+- text: Hey there, do you need some
+    help?
+utter_officehours:
+- text: Dr. Reed will be on Zoom every Monday from 1 to 2 for his office hours. The
+    meeting ID is 8284065157. If you have a time sensitive question that I can't help
+    you with, you can also email your professor, who is available over email often.
+utter_sylink:
+- text: https://docs.google.com/document/d/1MYdkmRtjjzg43nkPzzJ8kL1Wva1U_g2rXM5prSPhxt4/edit
+utter_teacheremail:
+- text: Dr. Reed is available almost anytime through his email, reedrw@appstate.edu.
+    This is the best way to contact him outside of office hours.
+- text: Dr. Reed can be emailed any time at reedrw@appstate.edu. Outside of office
+    hours, this is the best way to reach your professor, who checks his emails regularly.
+utter_tests:
+- text: You have a midterm and a final exam, but these are the only two tests for
+    your class. Both are required regardless of what grade you may hold in the class.
+    The midterm is cumulative of all material learned previously, and the final is
+    cumulative of everything learned following the midterm. They are both worth 25%
+    of your final grade, so it's important to study.
+utter_version:
+- text: This is version 1.1
+utter_whatpurpose:
+- text: I can help you with many things related to your class. If you didnt make it
+    to class, i can fill you in on what yu missed, help you find relevant resourses,
+    let you know of any upcoming assignments or activities, and tell you some basic
+    things about your class, even when it is if you happen to forget
+- text: Well, I can do a lot. Not to brag or anything. I can tell you information
+    you might have missed for upcoming assignments and homework, provide you with
+    relevant recourses, help with any scheduling problems that might come up, give
+    you some basic info on your class, and a few other things
+utter_wherefindlec:
+- text: The PowerPoint lectures that your professor recorded can be found on the ASUlearn
+    page sorted by unit. The lectures from future units may or may not be available
+    to you before a certain date.
+utter_whytitile:
+- text: TBD(title)
