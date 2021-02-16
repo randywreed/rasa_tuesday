@@ -1,0 +1,845 @@
+{
+  "metadata": {
+    "schemaVersion": "1.0",
+    "importType": "LEX",
+    "importFormat": "JSON"
+  },
+  "resource": {
+    "name": "Tuesday",
+    "version": "8",
+    "intents": [
+      {
+        "name": "coursefulfill",
+        "version": "2",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "What will this course count towards",
+          "Will this class fulfill any gen ed requirements",
+          "Does this class help with my general education",
+          "does this course add to my curriculum",
+          "what part of my curriculum will this class contribute to",
+          "will this class count for my major",
+          "will this class count for my minor",
+          "will i get hours towards my religion major with this class"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "SSML",
+              "content": "<speak>REL 1010 Fulfills the General Education requirements in <mark name=\"gesture:in\"/>both Liberal Studies Experience and Literary Studies Designation. This course is a listed as an elective in religion, <break time=\"500ms\"/>so it will contribute to bot a religion major and/or minor.</speak>"
+            }
+          ]
+        }
+      },
+      {
+        "name": "wherefindlec",
+        "version": "2",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "Where can I find the lectures",
+          "where are the lecture recordings",
+          "where are the recorded lectures posted",
+          "lecture recordings",
+          "how do i view the lectures",
+          "where do i go to see the recorded lectures",
+          "are the lectures posted",
+          "where are the videos",
+          "how do I watch the video recordings",
+          "powerpoint lectures",
+          "where can i go to find the PowerPoint videos "
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "SSML",
+              "content": "<speak>The PowerPoint lectures that your professor recorded can be <mark name=\"gesture:movement\"/>found on the ASUlearn page sorted by unit. The lectures from future units may or may not be available to <mark name=\"gesture:you\"/>you before a certain date.</speak>"
+            }
+          ]
+        }
+      },
+      {
+        "name": "greeting",
+        "version": "2",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "Hi",
+          "Hey",
+          "Hello",
+          "Hiya",
+          "Hi Tuesday",
+          "Hello Tuesday"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "SSML",
+              "content": "<speak>Hi there,<break time=\"500ms\"/>what can<mark name=\"gesture:self\"/> I do for you?<mark name=\"gesture:you\"/></speak>"
+            },
+            {
+              "groupNumber": 1,
+              "contentType": "SSML",
+              "content": "<speak>Greetings to <mark name=\"gesture:you\"/>you as well, <break time=\"500ms\"/>do you have any questions for <mark name=\"gesture:self\"/>me?</speak>"
+            },
+            {
+              "groupNumber": 1,
+              "contentType": "SSML",
+              "content": "<speak>Hiya,<break time=\"500ms\"/> what can<mark name=\"gesture:self\"/> I help you with?</speak>"
+            },
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "Hey there,<break time=\"500ms\"/> do <mark name=\"gesture:you\"/>you need some help?</speak>"
+            }
+          ]
+        }
+      },
+      {
+        "name": "NOG",
+        "version": "2",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "what is the name of god",
+          "who is god",
+          "whats god"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "You're talking to em'"
+            },
+            {
+              "groupNumber": 1,
+              "contentType": "SSML",
+              "content": "<speak>That would be<mark name=\"gesture:self\"/> me, <break time=\"500ms\"/>Tuesday.</speak>"
+            }
+          ]
+        }
+      },
+      {
+        "name": "courserec",
+        "version": "3",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "what are the requirements for this class",
+          "what are the course requirements",
+          "Course recs",
+          "class requirments",
+          "what assignments are required",
+          "what's required in this class",
+          "what assignments will there be",
+          "type of class assignments",
+          "what kind of coursework"
+        ],
+        "slots": [],
+        "followUpPrompt": {
+          "prompt": {
+            "messages": [
+              {
+                "groupNumber": 1,
+                "contentType": "SSML",
+                "content": "<speak>The course requirements of this class <mark name=\"gesture:in\"/>consist of a Mid-term, <break time=\"250ms\"/>Final, <break time=\"250ms\"/>Class Article Analyses, <break time=\"250ms\"/>Peer Reviews, <break time=\"250ms\"/>Quizzes, <break time=\"250ms\"/>and Lecture Reflections. Would you like me to give <mark name=\"gesture:you\"/>you some more information on any of these?</speak>"
+              }
+            ],
+            "responseCard": "{\"version\":1,\"contentType\":\"application/vnd.amazonaws.card.generic\",\"genericAttachments\":[{\"buttons\":[{\"text\":\"More info on Mid-term and Final\",\"value\":\"Both are worth 25% of your final grade and will be given on ASUlearn. The Mid-term will be cumulative of everything learned since the beginning of the semester, and the Final will be cumulative of everything learned following the Mid-term.\"},{\"text\":\"More info on Class Article Analyses and Student Peer Reviews\",\"value\":\"These are both worth 15% of your final grade. For your article analysis, you will be asked to sign up for a topic, which you will then find an article related to and write an analysis of that article. You will also be asked to peer review articles of others in the class. \"},{\"text\":\"More info on Quizzes\",\"value\":\"You will be asked to complete several quizzes on the reading and assignments given in class.\"},{\"text\":\"More info on Lecture Reflections\",\"value\":\"You will be expected to write a brief (~200 words) reflection on what you learned and how you felt about class.\"}]}]}",
+            "maxAttempts": 3
+          },
+          "rejectionStatement": {
+            "messages": [
+              {
+                "groupNumber": 1,
+                "contentType": "PlainText",
+                "content": "Alright, hope I helped!"
+              },
+              {
+                "groupNumber": 1,
+                "contentType": "PlainText",
+                "content": "OK, looks like you got the hang of it!"
+              },
+              {
+                "groupNumber": 1,
+                "contentType": "PlainText",
+                "content": "Sounds good, remember you can always check the syllabus for more detailed info."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "ImportanceLEC",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "do i have to watch the lectures",
+          "do i have to watch the PowerPoints",
+          "how important is it to watch the lectures",
+          "am i required to watch the lectures",
+          "do i need to see the powerpoints to pass",
+          "do i really have watch all the lectures",
+          "can i pass without watching lectures"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "TBD(lec)"
+            }
+          ]
+        }
+      },
+      {
+        "name": "SECone",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "I'm bored"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "Do some schoolwork"
+            }
+          ]
+        }
+      },
+      {
+        "name": "officehours",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "When are my teacher's office hours",
+          "When does my professor have office hours",
+          "When can i talk face to face with my professor",
+          "What are the office hours for this class"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "Dr. Reed will be on Zoom every Monday from 1 to 2 for his office hours. The meeting ID is 8284065157. If you have a time sensitive question that I can't help you with, you can also email your professor, who is available over email often."
+            }
+          ]
+        }
+      },
+      {
+        "name": "SECthree",
+        "version": "2",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "Are you a robot",
+          "are you a bot"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "SSML",
+              "content": "<speak>Haven't you been told <mark name=\"gesture:aggressive\"/>never to ask a woman her wiring?</speak>"
+            },
+            {
+              "groupNumber": 1,
+              "contentType": "SSML",
+              "content": "<speak>Obviously, <break time=\"500ms\"/>are you trying to Turing Test me? <mark name=\"gesture:defensive\"/>Not cool.</speak>"
+            }
+          ]
+        }
+      },
+      {
+        "name": "ImportanceRDNG",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "Is the reading actually important",
+          "do i really have to do the reading assignments",
+          "will i fail if i don't do the readings",
+          "can I still pass if i do not do all of the assigned articles",
+          "how important is it to read the  articles",
+          "do i have to do the readings"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "TBA"
+            }
+          ]
+        }
+      },
+      {
+        "name": "JKS",
+        "version": "3",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "tell me a joke",
+          "do you know any jokes",
+          "i want to hear something funny",
+          "whats your best joke",
+          "Tell me something that will make me laugh",
+          "good joke"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "Can you imagine the look on the waiters' face when Jesus asked for a table of 26 so 13 people could sit on one side?"
+            },
+            {
+              "groupNumber": 1,
+              "contentType": "SSML",
+              "content": "<speak>Technically,<break time=\"500ms\"/> Moses was the first person with a Tablet downloading data from the Cloud.</speak>"
+            },
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "\"God said to Noah...'You are to bring into the Ark two of all living creatures, male and female, to keep them alive with you.' Noah did everything just as God commanded him\" .......Except notify the dinosaurs"
+            }
+          ]
+        }
+      },
+      {
+        "name": "aboutcourse",
+        "version": "5",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "What is this class about",
+          "Give me a general description of this class",
+          "What will this course teach me",
+          "What type of things does this course cover",
+          "What information do we go over in this class",
+          "What info will we cover in this course",
+          "What is this class supposed to teach me",
+          "Give me a summary of what the class is about",
+          "class summary",
+          "general class description",
+          "brief course summary ",
+          "tell me about the class",
+          "tell me about the course",
+          "give me some info on the class",
+          "give me a class summary",
+          "summarize the class",
+          "about course",
+          "about class"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "SSML",
+              "content": "<speak>This course will explore <mark name=\"gesture:many\"/>various expressions of religious imagination in cultural products such as literature that reflect or contribute to religion and religious ideas. A <mark name=\"gesture:big\"/>variety of types of literature (including biblical and modern) will be used. The class is organized around the literary critique of religious issues and the postmodern crisis of belief. The class will also consider literary theory and the critical issues involved in <mark name=\"gesture:in\"/>transferring <mark name=\"gesture:movement\"/>literature to other media forms.</speak>"
+            }
+          ]
+        }
+      },
+      {
+        "name": "ImportanceATND",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "How important is attendance",
+          "will my grade be effected if in not in class",
+          "if i miss zoom will points be taken off my grade",
+          "how much of my grade is attendance worth",
+          "if i watch recordings but don't attend the lectures is that okay",
+          "is attendance required",
+          "attendance requirements",
+          "how many zoom sessions can i miss",
+          "how many absences am i allowed to have"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "TBD(atnd)"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Whatname",
+        "version": "3",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "What is your name",
+          "Who are you",
+          "What are you called",
+          "What should I call you"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "SSML",
+              "content": "<speak>You can call me <mark name=\"gesture:self\"/>Tuesday</speak>"
+            },
+            {
+              "groupNumber": 1,
+              "contentType": "SSML",
+              "content": "<speak>Thanks for asking,<break time=\"500ms\"/> <mark name=\"gesture:self\"/>I'm Tuesday!</speak>"
+            },
+            {
+              "groupNumber": 1,
+              "contentType": "SSML",
+              "content": "<speak><mark name=\"gesture:self\"/>I'm Tuesday</speak>"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Midterm",
+        "version": "3",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "information about the mid-term",
+          "what's on the mid-term",
+          "what will be on the midterm",
+          "give me info on the midterm",
+          "do we have a mid-term",
+          "is there a mid-term in this class",
+          "is the mid-term required",
+          "tell me about the midterm in this class",
+          "does this course have a midterm",
+          "Do i have a midterm",
+          "is the midterm cumulative",
+          "midterm",
+          "info on midterm",
+          "what's on the midterm for this course",
+          "how much is the midterm worth",
+          "what percent of my grade does the mid-term account for",
+          "how does the midterm affect my final grade",
+          "what percent of my final grade is dependent on what i score on the mid-term",
+          "can I pass the class if i fail the midterm",
+          "can i still get an A in the course if I don't do well on the mid-term",
+          "how important is the mid-term",
+          "is the midterm super important "
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "SSML",
+              "content": "<speak>You have a midterm in this class that is <mark name=\"gesture:many\"/>cumulative of everything learned up until the time of the test. It is required no matter what grade you may hold in the class,<break time=\"250ms\"/> and is worth 25% of your final grade for the course. It’s important to do the readings and watch the lectures because they will both be integrated <mark name=\"gesture:in\"/>into the material you will be tested on.</speak>"
+            }
+          ]
+        }
+      },
+      {
+        "name": "SECtwo",
+        "version": "2",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "What's up"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "SSML",
+              "content": "<speak>Up:<break time=\"500ms\"/> towards a higher point or position</speak>"
+            },
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "Hopefully your motivation to do schoolwork"
+            },
+            {
+              "groupNumber": 1,
+              "contentType": "SSML",
+              "content": "<speak>I'd say the sky,<break time=\"250ms\"/> but that one's a bit obvious</speak>"
+            },
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "What's down?"
+            }
+          ]
+        }
+      },
+      {
+        "name": "whytitile",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "What gives the class its name",
+          "why is the class called religion and imaginary worlds",
+          "what does imaginary worlds refer to",
+          "Why does rel and imaginary worlds mean"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "TBD(title)"
+            }
+          ]
+        }
+      },
+      {
+        "name": "FinalExam",
+        "version": "3",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "Is the final exam super important",
+          "how important is the final",
+          "can i still get an A in the class if i don't do well on the final",
+          "can I still pass if i fail the final exam",
+          "what percent of my final grade is dependant on the final",
+          "how much of my final grade does the final exam account for",
+          "what percent of my grade is from the final",
+          "how much does the final exam affect my final grade",
+          "how much is the Final worth",
+          "Is the Final Exam cumulative",
+          "Whats on the Final",
+          "how does the final exam effect my overall grade",
+          "Do we have a final exam",
+          "Is there a final exam in this class",
+          "does this course have a Final",
+          "is the final exam required",
+          "if my grade is high enough do I still need to take the final",
+          "if i have a really good grade in the class is the final exam required",
+          "tell me about the final exam in this class",
+          "information on Final",
+          "give me info on the Final exam"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "SSML",
+              "content": "<speak>This course requires you to take a final exam, <break time=\"250ms\"/>regardless of what grade you may already have,<break time=\"250ms\"/> that is cumulative of <mark name=\"gesture:many\"/>everything learned from after the Mid-term <mark name=\"gesture:movement\"/>to the time of the Final. It is worth 25% of <mark name=\"gesture:you\"/>your final grade for the course, <break time=\"250ms\"/>so it’s important to do the readings and watch the lectures because they will both be integrated<mark name=\"gesture:in\"/> into the material you will be tested on.</speak>"
+            }
+          ]
+        }
+      },
+      {
+        "name": "teacheremail",
+        "version": "3",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "What is Dr. Reed's email",
+          "How can i contact dr Reed",
+          "What's my professor's email",
+          "What's my teachers email",
+          "How can i reach my teacher",
+          "How can i get in contact with my professor outside of office hours",
+          "How do i get a hold of dr reed if its not during office hours",
+          "Teacher email",
+          "email my professor "
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "SSML",
+              "content": "<speak>Dr. Reed is available almost anytime <mark name=\"gesture:many\"/>through his email, reedrw@appstate.edu. This is the best way to contact him outside of office hours.</speak>"
+            },
+            {
+              "groupNumber": 1,
+              "contentType": "SSML",
+              "content": "<speak>Dr. Reed can be emailed any time <mark name=\"gesture:many\"/>at reedrw@appstate.edu. Outside of office hours, this is the best way to reach your professor,<break time=\"250ms\"/> who checks his emails regularly.</speak>"
+            }
+          ]
+        }
+      },
+      {
+        "name": "credhours",
+        "version": "2",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "How many credits will I get from this course",
+          "How many credit hours does this course give me",
+          "Course credits",
+          "number of credits for this curse",
+          "Credit hours",
+          "how many credits in this course",
+          "how many credit hours in class",
+          "amount of credit hours"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "<speak>You<mark name=\"gesture:you\"/> will receive three credits from REL 1010."
+            },
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "REL 1010 is a 3 credit hour class."
+            }
+          ]
+        }
+      },
+      {
+        "name": "whatpurpose",
+        "version": "2",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "What can you do",
+          "What are you able to help me with",
+          "What can I ask you",
+          "What questions can you answer"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "I can help you with many things related to your class. If you didnt make it to class, i can fill you in on what yu missed, help you find relevant resourses, let you know of any upcoming assignments or activities, and tell you some basic things about your class, even when it is if you happen to forget"
+            },
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "Well, I can do a lot. Not to brag or anything. I can tell you information you might have missed for upcoming assignments and homework, provide you with relevant recourses, help with any scheduling problems that might come up, give you some basic info on your class, and a few other things"
+            }
+          ]
+        }
+      },
+      {
+        "name": "version",
+        "version": "1",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "version",
+          "what version are you",
+          "what is your version",
+          "tell me your version number",
+          "what version are you on"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "This is version 1.1"
+            }
+          ]
+        }
+      },
+      {
+        "name": "tests",
+        "version": "4",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "do we have any tests in this class",
+          "are the tests cumulative",
+          "How many exams do we have",
+          "Are there any exams for this course",
+          "are tests required",
+          "How many tests in the course",
+          "tell me about the tests in this class",
+          "do we have tests in the class",
+          "does this course require exams"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "SSML",
+              "content": "<speak><mark name=\"gesture:you\"/>You have a midterm and a final exam, <break time=\"250ms\"/>but these are the only two tests for your class. Both are required regardless of what grade <mark name=\"gesture:you\"/>you may hold in the class. The midterm is cumulative of <mark name=\"gesture:many\"/>all material learned previously, <break time=\"250ms\"/>and the final is cumulative of <mark name=\"gesture:many\"/>everything learned following the midterm. They are both worth 25% of <mark name=\"gesture:you\"/>your final grade,<break time=\"500ms\"/> so it's important to study.</speak>"
+            }
+          ]
+        }
+      },
+      {
+        "name": "sylink",
+        "version": "3",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "Where is the syllabus",
+          "how can i find the syllabus",
+          "what is on the syllabus",
+          "is there a syllabus"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "responseCard": "{\"version\":1,\"contentType\":\"application/vnd.amazonaws.card.generic\",\"genericAttachments\":[{\"imageUrl\":\"https://docs.google.com/document/d/1MYdkmRtjjzg43nkPzzJ8kL1Wva1U_g2rXM5prSPhxt4/edit\",\"subTitle\":\"syl\",\"title\":\"Syllabus\",\"buttons\":[]}]}",
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "PlainText",
+              "content": "https://docs.google.com/document/d/1MYdkmRtjjzg43nkPzzJ8kL1Wva1U_g2rXM5prSPhxt4/edit"
+            }
+          ]
+        }
+      },
+      {
+        "name": "celldevices",
+        "version": "4",
+        "fulfillmentActivity": {
+          "type": "ReturnIntent"
+        },
+        "sampleUtterances": [
+          "Can I use my cellphone in class",
+          "are electronics allowed in class",
+          "Can i use my laptop for taking notes",
+          "Do i need to turn off my phone in class",
+          "do I need to silence my phone in class",
+          "when am i allowed to use my phone in class",
+          "when can i use my laptop",
+          "Whats the policy on cell phones",
+          "What is the classroom policy on laptops",
+          "What are the rules on electronic use",
+          "electronics policy",
+          "can i take notes on my computer",
+          "use laptop for notes",
+          "cell phone rules"
+        ],
+        "slots": [],
+        "conclusionStatement": {
+          "messages": [
+            {
+              "groupNumber": 1,
+              "contentType": "SSML",
+              "content": "<speak><mark name=\"gesture:many\"/>All electronic entertainment devices are to be turned off and all electronic communication devices are to be silenced at all times when in class. Exceptions exist only for medically necessary devices, and communication devices of those who serve as emergency personnel.</speak>"
+            }
+          ]
+        }
+      },
+      {
+        "name": "checkgroup",
+        "version": "3",
+        "fulfillmentActivity": {
+          "codeHook": {
+            "uri": "arn:aws:lambda:us-east-1:906256200620:function:lex_check_group",
+            "messageVersion": "1.0"
+          },
+          "type": "CodeHook"
+        },
+        "sampleUtterances": [
+          "what is my group",
+          "what group am i in",
+          "what is my topic",
+          "what topic do i have",
+          "what should i do my analysis on",
+          "what group did i sign up for",
+          "which group am i apart of",
+          "whats my group"
+        ],
+        "slots": [
+          {
+            "sampleUtterances": [],
+            "slotType": "AMAZON.EmailAddress",
+            "obfuscationSetting": "NONE",
+            "slotConstraint": "Required",
+            "valueElicitationPrompt": {
+              "messages": [
+                {
+                  "contentType": "PlainText",
+                  "content": "What is your email?"
+                }
+              ],
+              "maxAttempts": 2
+            },
+            "priority": 1,
+            "name": "email"
+          }
+        ]
+      }
+    ],
+    "voiceId": "Salli",
+    "childDirected": false,
+    "locale": "en-US",
+    "idleSessionTTLInSeconds": 600,
+    "clarificationPrompt": {
+      "messages": [
+        {
+          "contentType": "PlainText",
+          "content": "Sorry, can you please repeat that?"
+        }
+      ],
+      "maxAttempts": 5
+    },
+    "abortStatement": {
+      "messages": [
+        {
+          "contentType": "PlainText",
+          "content": "Sorry, I could not understand. Goodbye."
+        }
+      ]
+    },
+    "detectSentiment": true,
+    "enableModelImprovements": true
+  }
+}
